@@ -3,22 +3,3 @@ spring:
     name: Module Info
   main:
     web-application-type: none
-
-build:
-  name: ppModInfoTestBuild
-  version: 1.0.0-SNAPSHOT
-  date: 04.04.2024
-  os: Windows
-
-build_env:
-  jdk-dist: Coretto
-  jdk-version: jdk17.0.5_8
-  docker-dist: Docker Desktop
-  docker-version: 4.28.0
-
-contact:
-  author: Pplociennik
-  mail:
-    - pplociennik097@gmail.com
-    - przemx.84@gmail.com
-  github: https://github.com/Pplociennik
