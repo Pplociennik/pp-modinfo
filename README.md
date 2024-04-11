@@ -64,19 +64,19 @@ in your Spring application or configuration class.
 
 The library uses application properties which need to be defined before usage:
 
-build.name = A name of the application.  
-build.version = Version.  
-build.date = A date of build.  
-build.os = The os on which the application has been built.  
+**build.name** = *A name of the application.*  
+**build.version** = *Version.*  
+**build.date** = *A date of build.*  
+**build.os** = *The os on which the application has been built.*  
 
-build-env.jdk-distribution = A distribution of the JDK used for compilation.  
-build-env.jdk-version = A version of the JDK used for compilation.  
-build-env.docker-distribution = A distribution of docker used for creating the image.  
-build-env.docker-version = A version of docker used for creating the image.  
+**build-env.jdk-distribution** = *A distribution of the JDK used for compilation.*  
+**build-env.jdk-version** = *A version of the JDK used for compilation.*  
+**build-env.docker-distribution** = *A distribution of docker used for creating the image.*  
+**build-env.docker-version** = *A version of docker used for creating the image.*  
 
-contact.authors = A list of authors.   
-contact.email-addresses = A list of contact email addresses.  
-contact.github-link = An url to GitHub.
+**contact.authors** = *A list of authors.*   
+**contact.email-addresses** = *A list of contact email addresses.*  
+**contact.github-link** = *An url to GitHub.*
 
 ---
 
