@@ -19,16 +19,16 @@ public class ModInfoMapper {
 
     public static BuildInfoDto mapToDto( @NonNull BuildInfo aBuildInfo ) {
         requireNonNull( aBuildInfo );
-        return new BuildInfoDto( aBuildInfo.name(), aBuildInfo.version(), aBuildInfo.date(), aBuildInfo.os() );
+        return new BuildInfoDto( aBuildInfo.getName(), aBuildInfo.getVersion(), aBuildInfo.getDate(), aBuildInfo.getOs() );
     }
 
     public static BuildEnvInfoDto mapToDto( @NonNull BuildEnvInfo aBuildEnvInfo ) {
         requireNonNull( aBuildEnvInfo );
-        return new BuildEnvInfoDto( aBuildEnvInfo.jdkDistribution(), aBuildEnvInfo.jdkVersion(), aBuildEnvInfo.dockerDistribution(), aBuildEnvInfo.dockerVersion() );
+        return new BuildEnvInfoDto( aBuildEnvInfo.getJdkDistribution(), aBuildEnvInfo.getJdkVersion(), aBuildEnvInfo.getDockerDistribution(), aBuildEnvInfo.getDockerVersion() );
     }
 
     public static ContactInfoDto mapToDto( @NonNull ContactInfo aContactInfo ) {
         requireNonNull( aContactInfo );
-        return new ContactInfoDto( aContactInfo.authors(), aContactInfo.emailAddresses(), aContactInfo.githubLink() );
+        return new ContactInfoDto( aContactInfo.getAuthors(), aContactInfo.getEmailAddresses(), aContactInfo.getGithubLink() );
     }
 }

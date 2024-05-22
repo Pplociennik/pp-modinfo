@@ -1,5 +1,7 @@
 package com.github.pplociennik.modinfo.config;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
@@ -11,7 +13,12 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  *
  * @author Created by: Pplociennik at 09.04.2024 20:11
  */
+@Getter
+@Setter
 @ConfigurationProperties( prefix = "build-env" )
-public record BuildEnvInfo( String jdkDistribution, String jdkVersion, String dockerDistribution,
-                            String dockerVersion ) {
+public class BuildEnvInfo {
+    private String jdkDistribution;
+    private String jdkVersion;
+    private String dockerDistribution;
+    private String dockerVersion;
 }

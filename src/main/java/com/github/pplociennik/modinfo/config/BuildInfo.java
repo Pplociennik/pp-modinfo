@@ -1,5 +1,7 @@
 package com.github.pplociennik.modinfo.config;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.time.LocalDate;
@@ -13,6 +15,12 @@ import java.time.LocalDate;
  *
  * @author Created by: Pplociennik at 04.04.2024 19:52
  */
+@Getter
+@Setter
 @ConfigurationProperties( prefix = "build" )
-public record BuildInfo( String name, String version, LocalDate date, String os ) {
+public class BuildInfo {
+    private String name;
+    private String version;
+    private LocalDate date;
+    private String os;
 }

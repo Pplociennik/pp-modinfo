@@ -1,5 +1,7 @@
 package com.github.pplociennik.modinfo.config;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.util.List;
@@ -12,6 +14,11 @@ import java.util.List;
  *
  * @author Created by: Pplociennik at 09.04.2024 20:16
  */
+@Getter
+@Setter
 @ConfigurationProperties( prefix = "contact" )
-public record ContactInfo( List< String > authors, List< String > emailAddresses, String githubLink ) {
+public class ContactInfo {
+    List< String > authors;
+    List< String > emailAddresses;
+    String githubLink;
 }

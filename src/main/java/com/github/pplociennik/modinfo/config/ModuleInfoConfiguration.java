@@ -17,17 +17,17 @@ import static com.github.pplociennik.modinfo.config.ModuleInfoConfiguration.*;
 public class ModuleInfoConfiguration {
 
     /**
-     *
+     * Base package where the configuration classes are being stored.
      */
     public static final String CONFIGURATION_BASE_PACKAGE = "com.github.pplociennik.modinfo.config";
 
     /**
-     *
+     * Base package where the controllers are being stored.
      */
     public static final String CONTROLLERS_BASE_PACKAGE = "com.github.pplociennik.modinfo.controller";
 
     /**
-     *
+     * Base package where the services are being stored.
      */
     public static final String SERVICES_BASE_PACKAGE = "com.github.pplociennik.modinfo.service.impl";
 }
