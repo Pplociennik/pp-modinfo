@@ -93,5 +93,9 @@ The library uses application properties which need to be defined before usage:
 ### 1.0.0
 
 - Created Rest Controller, configuration, service and mapping utility.
+
+### 1.1.0
+
+- Changed the DTOs records to classes.
  
 
