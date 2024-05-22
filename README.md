@@ -97,5 +97,10 @@ The library uses application properties which need to be defined before usage:
 ### 1.1.0
 
 - Changed the DTOs records to classes.
+
+### 1.2.0
+
+- Changed the configuration properties records to classes.
+- Restored DTOs as records.
  
 
