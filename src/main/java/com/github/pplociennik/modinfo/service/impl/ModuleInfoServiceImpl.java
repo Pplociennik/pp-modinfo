@@ -9,7 +9,6 @@ import com.github.pplociennik.modinfo.dto.ContactInfoDto;
 import com.github.pplociennik.modinfo.dto.ModuleInfoDto;
 import com.github.pplociennik.modinfo.map.ModInfoMapper;
 import com.github.pplociennik.modinfo.service.IModuleInfoService;
-import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 /**
@@ -18,12 +17,20 @@ import org.springframework.stereotype.Service;
  * @author Created by: Pplociennik at 04.04.2024 20:17
  */
 @Service
-@AllArgsConstructor
 class ModuleInfoServiceImpl implements IModuleInfoService {
 
     private final BuildInfo buildInfo;
     private final BuildEnvInfo buildEnvInfo;
     private final ContactInfo contactInfo;
+
+    /**
+     * Creates a new instance of the class.
+     */
+    public ModuleInfoServiceImpl( BuildInfo buildInfo, BuildEnvInfo buildEnvInfo, ContactInfo contactInfo ) {
+        this.buildInfo = buildInfo;
+        this.buildEnvInfo = buildEnvInfo;
+        this.contactInfo = contactInfo;
+    }
 
     /**
      * Gathers the details about the current application build.
