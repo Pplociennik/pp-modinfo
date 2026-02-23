@@ -21,11 +21,11 @@ import org.springframework.web.bind.annotation.RestController;
 @AllArgsConstructor
 class InfoController {
 
-    private final IModuleInfoService IModuleInfoService;
+    private final IModuleInfoService moduleInfoService;
 
     @GetMapping( path = "/build-info" )
     ResponseEntity< BuildInfoDto > getBuildInfo() {
-        BuildInfoDto moduleBuildInformation = IModuleInfoService.getModuleBuildInformation();
+        BuildInfoDto moduleBuildInformation = moduleInfoService.getModuleBuildInformation();
         return ResponseEntity
                 .status( HttpStatus.OK )
                 .body( moduleBuildInformation );
@@ -33,7 +33,7 @@ class InfoController {
 
     @GetMapping( path = "/build-env-info" )
     ResponseEntity< BuildEnvInfoDto > getBuildEnvInfo() {
-        BuildEnvInfoDto moduleBuildEnvironmentInformation = IModuleInfoService.getModuleBuildEnvironmentInformation();
+        BuildEnvInfoDto moduleBuildEnvironmentInformation = moduleInfoService.getModuleBuildEnvironmentInformation();
         return ResponseEntity
                 .status( HttpStatus.OK )
                 .body( moduleBuildEnvironmentInformation );
@@ -41,7 +41,7 @@ class InfoController {
 
     @GetMapping( path = "/contact-info" )
     ResponseEntity< ContactInfoDto > getContactInfo() {
-        ContactInfoDto contactInfo = IModuleInfoService.getContactInformation();
+        ContactInfoDto contactInfo = moduleInfoService.getContactInformation();
         return ResponseEntity
                 .status( HttpStatus.OK )
                 .body( contactInfo );
@@ -49,7 +49,7 @@ class InfoController {
 
     @GetMapping( path = "/module-info" )
     ResponseEntity< ModuleInfoDto > getModuleInfo() {
-        ModuleInfoDto moduleInfo = IModuleInfoService.getModuleInformation();
+        ModuleInfoDto moduleInfo = moduleInfoService.getModuleInformation();
         return ResponseEntity
                 .status( HttpStatus.OK )
                 .body( moduleInfo );
